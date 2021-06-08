@@ -322,6 +322,7 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
   - .build
   - .swiftpm
   - R.generated.swift
+  - Sources/ApodiniTypeInformation/JSONEncoder
 
 closure_body_length: # Closure bodies should not span too many lines.
   - 35 # warning - default: 20
@@ -364,7 +365,7 @@ line_length: # Lines should not span too many characters.
 nesting: # Types should be nested at most 2 level deep, and statements should be nested at most 5 levels deep.
   type_level:
     warning: 2 # warning - default: 1
-  statement_level:
+  function_level:
     warning: 5 # warning - default: 5
     
 trailing_closure:
